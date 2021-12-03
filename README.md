@@ -13,7 +13,7 @@ I also tried to keep the website as neat and tidy as possible, sticking with sol
 My wireframe: https://xd.adobe.com/view/d093239e-51ea-4f0f-8463-674aaed6c82d-85c0/
 
 Features:
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
 
 Navigation Bar - allows site users to easily navigate the different sections of the website
 Rotating Words - showcases my skills such that recruiters would know
@@ -25,7 +25,6 @@ Features Left to Implement
 Floating "Back Up" Button
 
 Testing:
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 Contact form:
 Go to the "Contact" page
