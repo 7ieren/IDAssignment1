@@ -1,7 +1,9 @@
-Portfolio Website
+Portfolio Website:
+
 I created this website as an assignment for my Interactive Development module where this would basically be my portfolio, and talk about me and why I should be hired.
 
-Design Process
+Design Process:
+
 I designed it as such so that it would be by chronological order, first knowing briefly about myself, then as the user scrolls down, they get to learn more and at the end, if they are interested in me as an applicant, they are able to contact me via the form.
 
 I wanted to intrigue the recruiter, so I decided to implement a rotating word list, showcasing what I am learning as of now.
@@ -10,7 +12,7 @@ I also tried to keep the website as neat and tidy as possible, sticking with sol
 
 My wireframe: https://xd.adobe.com/view/d093239e-51ea-4f0f-8463-674aaed6c82d-85c0/
 
-Features
+Features:
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Navigation Bar - allows site users to easily navigate the different sections of the website
@@ -22,7 +24,7 @@ Footer - links to my Social media, as well as back to the top of the website.
 Features Left to Implement
 Floating "Back Up" Button
 
-Testing
+Testing:
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 Contact form:
@@ -32,7 +34,7 @@ Try to submit the form with an invalid email address and verify that a relevant 
 Try to submit the form with all inputs valid and verify that a success message appears.
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-Credits
+Credits:
 
 Media:
 The photos used in this site were obtained from Google.
@@ -45,5 +47,5 @@ https://www.chess.com/
 https://www.facebook.com/PlayVALORANT/
 https://commons.wikimedia.org/wiki/File:YouTube_social_red_square_(2017).svg
 
-Acknowledgements
+Acknowledgements:
 I received inspiration for this project from researching other portfolio websites and did my own spin on the different elements.
