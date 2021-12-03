@@ -27,11 +27,12 @@ Floating "Back Up" Button
 Testing:
 
 Contact form:
+
 Go to the "Contact" page
+
 Try to submit the empty form and verify that an error message about the required fields appears
 Try to submit the form with an invalid email address and verify that a relevant error message appears
 Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 Credits:
 
