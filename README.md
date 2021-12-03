@@ -33,7 +33,8 @@ Try to submit the form with all inputs valid and verify that a success message a
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 Credits
-Media
+
+Media:
 The photos used in this site were obtained from Google.
 https://www.moe.gov.sg/-/media/images/school-logos/primary-schools/bukit-panjang-primary-school.png?h=261&la=en&w=193&hash=264787389537E864A1FFF7529366F8F7B56C0991
 https://www.moe.gov.sg/-/media/images/school-logos/secondary-schools/chua-chu-kang-secondary-school.jpg?h=795&la=en&w=777&hash=1AF25BE59A523655CD1F29C70EDEEB2C36B4A760
