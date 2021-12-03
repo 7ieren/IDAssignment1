@@ -1,0 +1,568 @@
+/* scrolls down the page smoothly */
+html {   scroll-behavior: smooth;  }
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  background-color: white;
+  place-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* spaces out list */
+li {
+ margin-left: 30px;
+}
+
+/* nav bar styling */
+.navbar{
+  overflow: hidden;
+  transition: 0.6s;
+	position: fixed;
+	width: 100%;
+	padding: 15px ;
+	font-family: 'Barlow Condensed', sans-serif;
+  font-size: 35px;
+  font-weight:bold;
+  background-color: #CF9FFF;
+  z-index: 99;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px 0;
+  padding-right: 10px;
+}
+
+.navbar .menu li {
+	list-style: none;
+	display: inline-block;
+  text-decoration: none;
+
+}
+
+.navbar .menu li a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: all ease-in-out 200ms;
+}
+ 
+/* such that my name is on the left */
+.navbar li:first-child{
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+/* when hovering on navbar */
+li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 0%;
+  background-color: pink;
+  bottom: -15px;
+  transition: all ease-in-out 200ms;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+/* turns pink*/
+.navbar li a:hover{
+  color: pink;
+}
+
+/* home styling */
+.home{
+  background-color: #FAC6BF;
+  display:flex;
+  background-attachment: fixed;
+  height:100vh; 
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size:40px;
+  width:100%;
+  border-radius: 50px;
+}
+
+.home .max{
+  max-width:1300px;
+  padding:0;
+  margin:150px 100px 0 75px;
+}
+
+#abt{
+  padding-left: 200px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.l1{
+  padding-left: 200px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.home img{
+  margin-right:5%;
+  margin-left: 50px;
+  margin-top: 200px;
+  align-content: center;
+  border-radius: 25px;
+  transition: transform .2s; 
+}
+
+/* when hover on img, zoom in */
+.home img:hover{
+  transform: scale(1.05);
+  z-index: 98;
+}
+
+.content1{
+  padding-left:400px;
+}
+
+/* rotating words */
+.wrapper{
+  margin-top: 50px;
+  margin-left:275px;
+  margin-right:100px;
+  box-sizing: content-box;
+  background-color: #CF9FFF;
+  height: 70px;
+  padding: 10px;
+  padding-top: 2%;
+  padding-left: 9%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.words{
+  overflow: hidden;
+
+}
+
+.rotate{
+  padding: 100px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+span{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: white;
+  animation: spin_words 6s infinite;
+}
+
+/* animation */
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
+}
+
+
+/* educational history styling */
+.educationhistory {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 80px;
+  justify-content: space-between
+}
+
+.educationhistory h1{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 55px;
+  color: white;
+  position: relative;
+  top:-35px;
+  text-align: center;
+  background-color: lightblue;
+  padding: 25px;
+  border-radius: 100px;
+}
+
+.educationhistory h2{
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  min-width: 30%;
+}
+
+.educationhistory p{
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  min-width: 40%;
+  padding-right: 5%;
+}
+
+.edubox{
+  display: flex;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: space-between
+}
+
+.edulogo{
+  min-width: 25%;
+  padding-bottom: 1%;
+  background-color: transparent;
+  transition: transform .2s; 
+}
+
+
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* when hover on logo, zooms in */
+.edulogo:hover {
+  transform: scale(1.5); 
+}
+
+/* work section styling */
+.workbox{
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color:	#1E2952;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 80px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.work .worktitle{
+  text-align:center;
+  font-weight:bold;
+  border-radius: 30px;
+  padding:20px;
+  color: white;
+  font-size: 55px;
+}
+
+.work p{
+  color: white;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  min-width: 40%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.worklogo{
+  align-items: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18%;
+  transition: transform .2s; 
+}
+
+.work img{
+  transition: transform .2s;
+}
+
+/* when hover on img, zoom in */
+.work img:hover{
+  transform: scale(1.2); 
+}
+
+.workvid{
+  align-items: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  transition: transform .2s; 
+  padding-bottom: 5%;
+}
+
+/* style projects section */
+.projects {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 80px;
+  position: relative;
+}
+
+#projecttitle {
+  font-size: 65px;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  border-radius: 100px;
+}
+
+.projectcontent {
+  padding: 100px;
+  width: 70%;
+  margin-right: 15%;
+  margin-top: 10px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  background-color: #F7F6CF;
+  top:100vh;
+  border-radius: 25px;
+}
+
+/* flex box */
+.projectContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.projectBox {
+  padding: 4%;
+  flex-grow: 1;
+  flex-basis: 15%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectImg img {
+  max-width: 100%;
+  transition: transform .2s; 
+}
+
+/* hover on image zoom in */
+.projectImg img:hover{
+  transform: scale(1.1);
+}
+
+.projectInfo {
+  margin-top: 5%;
+}
+
+.projectInfo h2{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.projectInfo p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* contact form styling */
+.contact {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#contacttitle {
+  font-size: 65px;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  border-radius: 100px;
+}
+
+.formContent {
+  align-items: center;
+  padding: 100px;
+  width: 70%;
+  margin-right: 15%;
+  margin-top: 10px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  background-color: #5072A7;
+  top:100vh;
+  border-radius: 25px;
+}
+
+input{
+  margin-top: 1%;
+  font-family: 'Barlow Condensed', sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* when focused, turns lightblue and removes outline */
+input:focus{
+  background-color: lightblue;
+  outline: none;
+}
+
+input[id=name]{
+  margin-left: 5%;
+  width: 25%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-right:5%;
+}
+
+input[id=email]{
+  width: 30%;
+  padding:15px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+
+input[id=subject]{
+  width: 25%;
+  padding:15px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+input[id=describe]{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contact textarea{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+	height: 100%;
+	width: 90%;
+  padding: 15px;
+  font-size: 35px;
+  font-weight: bold;
+	border-radius: 5px;
+	font-family: 'Barlow Condensed', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contact textarea:focus{
+  outline: none;
+  background-color: lightblue;
+}
+
+/* styling button */
+input[type=submit]{
+  margin-top: 5%;
+  margin-left: 35%;
+  width:25%;
+  align-content: center;
+  padding: 20px;
+  font-size: 35px;
+  border-radius: 8px;
+  font-weight: bolder;
+  background: white;
+  color: #00308F;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* when hover, invert colors */
+input[type=submit]:hover{
+  color: white;
+	background:#00308F;
+}
+
+/* footer styling */
+footer{
+	font-family: 'Barlow Condensed', sans-serif;
+  padding: 1%;
+  font-weight: bold;
+}
+
+footer{
+	background: #CF9FFF;
+	padding: 20px 23px;
+	color: #fff;
+	content: '';
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+footer a{
+  font-size: 35px;
+	color: white;
+	text-decoration: none;
+  transition: all ease-in-out 200ms;
+}
+
+/* when hover, words turn pink */
+footer a:hover{
+  color:pink;
+}
+
+/* media queries for flex box */
+@media (max-width: 920px) {
+  .projectBox {
+    flex-basis:45%;
+    flex-grow:0;
+  }
+}

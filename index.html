@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IDAssignment1</title>
+    <!--normalize.css & fonts-->
+	  <link href = "normalize.css" rel = "stylesheet"  type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Courgette&family=Open+Sans:wght@300&family=Zen+Antique+Soft&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <!--navbar as a list-->
+	<nav class="navbar" id = "navbar">
+		  <ul class="menu">
+        <li><a href="#home">chua jie ren</a></li>
+			  <li><a href="#home" class="menu-btn">about</a></li>
+			  <li><a href="#educationhistory" class="menu-btn">educational history</a></li>
+			  <li><a href="#work" class="menu-btn">work history</a></li>
+			  <li><a href="#projects" class="menu-btn">projects</a></li>
+			  <li><a href="#contact" class="menu-btn">contact</a></li>
+		  </ul>
+	</nav>
+  <!-- home section -->
+    <section class="home" id="home">
+      <div class="max">
+        <h1 id = "abt" >about me!</h1>
+        <div class="l1" >I am Chua Jie Ren, currently studying in Ngee Ann Polytechnic for a diploma in Information Technology! (i'm the one on the left)</div>
+        <!-- rotating words to show what im studying -->
+          <div class="wrapper">
+            <p>I am currently studying</p>
+            <div class="words">
+                <span>programming</span>
+                <span>cybersecurity</span>
+                <span>data science</span>
+                <span>communications</span>
+                <span>programming</span>
+          </div>
+        </div>
+      </div>
+      <!-- image of myself -->
+      <img class = "image1" src="pictures/picture1.jpeg" alt="Picture of Me" style="height:600px;">
+    </section>
+    <!-- my education history -->
+    <section id = "educationhistory" class = "educationhistory">
+      <div class = "max">
+        <h1 id = "edutitle">educational history!</h1>
+        <div class = "edubox">
+          <!-- logo links to school website -->
+          <div class = "edulogo"> <a href="https://www.bukitpanjangpri.moe.edu.sg/" target="_blank"><img src = "pictures/edu1.png" alt = "BPPS Logo"></a></div>
+          <h2><br>Bukit Panjang Primary School</h2>
+          <p> <br>I studied in Bukit Panjang Primary School from 2011-2016 and graduated the Primary School Leaving Exam with a score of 216.</p>
+        </div>
+        <div class = "edubox">
+          <div class = "edulogo"><a href = "https://chuachukangsec.moe.edu.sg/" target="_blank"><img src = "pictures/edu2.jpg" alt = "CCKSS Logo" style = "width:200px;height:200px"></a></div>
+          <h2><br>Chua Chu Kang Secondary School</h2>
+          <p> <br>In CCKSS, I took up basketball as a CCA, as well as the Environmental Ambassador for my class in 2019, and the Mathematics Subject Representative in 2020. I graduated in 2020, with a L1R4 of 14.</p>
+        </div>
+        <div class = "edubox">
+          <div class = "edulogo"><a href = "https://www.np.edu.sg/Pages/default.aspx" target="_blank"><img src = "pictures/edu3.jpg" alt = "NP Logo" style = "width:200px;height:200px"></a></div>
+          <h2><br><br>Ngee Ann Polytechnic</h2>
+          <p> <br><br><br>I am currently studying Information Technology in NP!</p>
+        </div>
+      </div>
+    </section>
+    <!-- work section -->
+    <section class="work" id="work">
+      <div class = "workbox">
+        <div class="worktitle"><h1>work experience!</h1></div>
+        <p id = "worktext">after finishing my GCE O-Level examinations, I took a break for a few weeks, and applied to work at Uniqlo! I then worked Part-Time as a retail sales associate for Uniqlo Orchard Central for 4 months, December 2020 to April 2021, where I learnt the basics of customer service, cashiering duties as well as to be more confident.</p>
+        <!-- logo brings to company's website (uniqlo) -->
+        <div class = "worklogo"><a href = "https://www.uniqlo.com/sg/en/" target="_blank"><img src = "pictures/work1.png" alt = "Uniqlo Logo" style = "width:300px;height:300px"></a></div>
+        <p id = "worktext2">these were some of my seniors who i worked with!</p>
+        <div class = "workvid"><img src = "pictures/gif1.gif" alt = "Gif of colleagues" style = "width:600px;height:450px"></div>
+      </div>
+    </section>
+    <!-- project section -->
+    <section class = "projects" id = "projects">
+      <h1 id = "projecttitle">projects!</h1> 
+      <!-- flexbox -->
+      <div class = "projectcontent">
+        <section class="projectContainer">
+          <div class="projectBox">
+            <div class="projectImg">
+              <!-- links to each project -->
+              <a href = "https://github.com/yannickgloster/discord-10man" target = "_blank"><img src="pictures/project1.jpg" alt = "Discord Logo" style = "width:225px;height:225px;border-radius:5px"></a>
+            </div>
+            <div class="projectInfo">
+              <h2>5v5 Discord Bot</h2>
+              <p>I created this bot so as to be able to make 5v5 lobbies with my friends for games such as Counter-Strike.</p>
+            </div>
+          </div>
+          <div class="projectBox">
+             <div class="projectImg">
+              <a href = "https://github.com/jhlywa/chess.js" target = "_blank"><img src="pictures/project2.png" alt = "Chessboard" style = "border-radius: 5px;width:225px;height:225px"></a>
+            </div>
+            <div class="projectInfo">
+              <h2>Chess Bot</h2>
+              <p>This is a javascript chess library that is used for chess move generation/validation.</p>
+            </div>
+          </div>
+          <div class="projectBox">
+             <div class="projectImg">
+              <a href = "https://www.youtube.com/watch?v=eBpIQklufas" target = "_blank"><img src="pictures/project3.jpg" alt = "Valorant Logo" style = "border-radius: 5px;width:225px;height:225px"></a>
+            </div>
+            <div class="projectInfo">
+              <h2>Fragmovie for Valorant</h2>
+              <p>I edited a video of my Valorant clips with Premiere Pro and uploaded it on Youtube.</p>
+            </div>
+          </div>
+          <div class="projectBox">
+           <div class="projectImg">
+              <a href = "https://imgur.com/gallery/kuqa4kw" target = "_blank"><img src="pictures/project4.png" alt = "Youtube Logo" style = "width:225px;height:225px;border-radius:5px"></a>
+            </div>
+            <div class="projectInfo">
+              <h2>Infographic for Youtube</h2>
+              <p>This is an Infographic for Youtube with Adobe Illustrator.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- contact form section -->
+    <section class = "contact" id ="contact">
+      <h1 id = "contacttitle">contact me!</h1> 
+      <div class ="formContent">
+        <div class="formContainer">
+            <!-- input form -->
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email"  placeholder="Email" required>
+            <input type = "text" id="subject"  placeholder="Subject" required>
+            <textarea id = "describe"  placeholder="Your Message" required></textarea>
+            <!-- button -->
+            <input type="submit" value="Send Message">
+      
+        </div>
+      </div>
+    </section>
+    <!-- footer linking to my social media -->
+    <footer>
+      made by ㅤ<a href="#home">chua jie ren</a>ㅤ|ㅤ<a href = "https://www.linkedin.com/in/jie-ren-chua-603b62210/" target ="_blank">LinkedIn</a>ㅤ|ㅤ<a href ="https://www.youtube.com/channel/UCqlbUaf1CDakwwxB3GMoG4Q" target ="_blank">YouTube</a>ㅤ|ㅤ<a href="mailto:jierenchuaa@gmail.com" target ="_blank">Email</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
